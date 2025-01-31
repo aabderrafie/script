@@ -1,6 +1,6 @@
 if [ $(users) == "aaskal" ]
 then
-    echo "wa ta sir thwa"
+    echo "HHHHHHHHHHHHHHH"
     exit 1
 fi  
 
